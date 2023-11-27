@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import {Route, Routes} from 'react-router-dom';
+import Kadula from './components/Kadula';
+import Health from './components/Health';
+import Hub from './components/Hub';
+import Water from './components/Water';
+import Env from './components/Env';
+import About from './components/About';
+import Team from './components/Team';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+import Mission from './components/Mission';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/kadula-farms" element={<Kadula/>}/>
+        <Route path="/altruis-health" element={<Health/>}/>
+        <Route path="/creativity-hub" element={<Hub/>}/>
+        <Route path= "/clean-water-innovation" element={<Water/>}/>
+        <Route path= "/environmental-compliance-innovation" element={<Env/>}/>
+        <Route path= "/about" element={<About/>}/>
+        <Route path= "/team" element={<Team/>}/>
+        <Route path= "/contact-us" element={<Contact/>}/>
+
+      </Routes>
+      <Mission/>
+<Footer/>
     </div>
   );
 }

@@ -5,6 +5,11 @@ import Doctor from '../assets/images/health-1.jpeg'
 import CenterImage from '../assets/images/health-3.png'
 import CHW from '../assets/images/health-4.png'
 import Hospital from '../assets/images/health-2.jpeg'
+import Job from '../assets/images/jobs-health.png'
+import { Icon } from '@iconify/react';
+import userSearch from '@iconify/icons-mdi/user-search';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faUserDoctor } from '@fortawesome/free-solid-svg-icons'
 
 function Health() {
   return (
@@ -48,8 +53,33 @@ Get Consultation            </p>
         </div>
       </div>
     </div>
-    <div className="body">
-      
+    <div className="body bg-white">
+      <div className="job h-1/2 flex">
+        <div className="img w-1/3">
+    <img src={Job} alt="" className=''/>
+        </div>
+        <div className="job-body w-1/2">
+          <div className="relative">
+            <img src={Star} alt=""  />
+            <div className="word">
+              For Health Professionals
+            </div>
+          </div>
+          <p className="font-logo text-3xl">
+          Find <span className="text-altru-blue"> Job</span> Opportunities.
+          </p>
+          <div className="iconed-list">
+            <div className="iconed-item">
+            <FontAwesomeIcon icon={faUserDoctor} />
+            <p>
+            Search for jobs based on various criteria such as job title, location, skills, and keyword.
+            </p>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
     </div>
   )

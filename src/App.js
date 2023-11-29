@@ -11,11 +11,13 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Mission from './components/Mission';
+// import Testimonial from './components/Testimonial';
 
 function App() {
   return (
     <div className="App">
       <Routes>
+
         <Route path="/" element={<Home/>}/>
         <Route path="/kadula-farms" element={<Kadula/>}/>
         <Route path="/altruis-health" element={<Health/>}/>
@@ -27,6 +29,7 @@ function App() {
         <Route path= "/contact-us" element={<Contact/>}/>
 
       </Routes>
+      {/* <Testimonial/> */}
       <Mission/>
 <Footer/>
     </div>

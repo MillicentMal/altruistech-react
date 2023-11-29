@@ -17,7 +17,8 @@ module.exports = withMT({
         'footer-text': '#EBF2FF',
         'altru-orange': '#F19C3F',
         'altru-pink': '#F8FFCF', 
-        'altru-mango': '#FCB713'
+        'altru-mango': '#FCB713', 
+        'light-blue': '#E4EDFF'
       },
     },
   },

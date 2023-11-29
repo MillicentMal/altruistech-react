@@ -7,14 +7,14 @@ import {
     Avatar,
   } from "@material-tailwind/react";
   import '../index.css'
-
+import Musa from '../assets/images/testi-1.png'
 function Testimonial() {
   return (
   
        
         
  
-          <Card color="transparent" shadow={false} className="w-full max-w-[26rem]">
+          <Card color="transparent" shadow={false} className="w-full max-w-[26rem] px-6 py-8 bg-altru-pink">
             <CardHeader
               color="transparent"
               floated={false}
@@ -24,23 +24,20 @@ function Testimonial() {
               <Avatar
                 size="lg"
                 variant="circular"
-                src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80"
-                alt="tania andrew"
+src={Musa}                alt="tania andrew"
               />
               <div className="flex w-full flex-col gap-0.5">
                 <div className="flex items-center justify-between">
-                  <Typography variant="h5" color="blue-gray">
-                    Tania Andrew
-                  </Typography>
+                  <Typography variant="h5" color="blue-gray" className='font-logo'>
+                  Musa Bangura                  </Typography>
                 </div>
-                <Typography color="blue-gray">Frontend Lead @ Google</Typography>
+                <Typography color="blue-gray">Farmer</Typography>
               </div>
             </CardHeader>
-            <CardBody className="mb-6 p-0">
+            <CardBody className="mb-6 p-0 font-body">
               <Typography>
-                &quot;I found solution to all my design needs from Creative Tim. I use
-                them as a freelancer in my hobby projects for fun! And its really
-                affordable, very humble guys !!!&quot;
+              As a farmer, clean water is vital for my crops and my family. <span className='text-altru-blue'>
+               Altruistech's solution has made it so much easier to access clean and safe water </span>, which benefits our entire village.
               </Typography>
             </CardBody>
           </Card>

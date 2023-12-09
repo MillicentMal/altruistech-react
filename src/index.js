@@ -5,15 +5,18 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ThemeProvider } from "@material-tailwind/react";
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ChakraProvider } from '@chakra-ui/react'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+        <ChakraProvider>
    <ThemeProvider>
       <Router>
         <App />
       </Router>
     </ThemeProvider>
+    </ChakraProvider>
 
   </React.StrictMode>
 );

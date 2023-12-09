@@ -11,6 +11,8 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Mission from './components/Mission';
+import TeamCard from './components/TeamCard';
+import TeamGrid from './components/TeamGrid';
 // import Testimonial from './components/Testimonial';
 
 function App() {

@@ -11,13 +11,15 @@ import SdgIcon from '../assets/images/sdg-icon.svg'
 import Hub from '../assets/images/altru-hub.svg'
 import { Typography } from '@material-tailwind/react'
 import TeamGrid from './TeamGrid'
+import Testimonials from './Testimonials'
+
 
 
 function Home() {
   return (
-    <div className='bg-altru-pink'>
+    <div className='bg-altru-pink overflow-x-hidden'>
      <Topbar/>
-     <div className="relative mb-4  lg:mx-32 sm:ms-6">
+     <div className="relative mb-4  lg:mx-32 sm:ms-6 ">
         <img className='absolute top-0 left-0' src={Star} alt="" />
         <div className="absolute rounded-3xl bg-white px-4 py-2 top-6 left-8 text-altru-orange font-body">
         Fostering Sustainable Future.
@@ -39,7 +41,7 @@ Contact Us    </button>
     </div>
     <Partners/>
 
-    <div className="sdgs pb-10">
+    <div className="sdgs pb-10 ">
       <div className="sdg-header mx-6">
         <div className="sdg-left">
         <div className="about bg-blue-50 w-max px-4 py-2 my-4 rounded-3xl text-blue-700">About Us</div>
@@ -51,7 +53,7 @@ Contact Us    </button>
          & <span className='text-altru-blue'>Impact</span>  Story.
         </h1>
       </div>
-      <div className="sdg-right ps-5 lg:w-1/2 sm:mt-6 relative border-l-4 border-l-altru-yellow">
+      <div className="sdg-right ps-5 lg:w-1/2 sm:mt-6 sm:w-4/5 lg:ms-32 relative border-l-4 border-l-altru-yellow">
         <p>
         We believe that technology can be a powerful force for good, and we are using our skills and expertise to develop solutions that can make a real difference in the world.
         </p>
@@ -69,8 +71,8 @@ Contact Us    </button>
         </Link>
       </div>
       </div>
-    <div className="sdg-body lg:flex lg:flex-row justify-around">
-      <div className="blue-sdg ms-6 rounded-lg lg:me-20 bg-altru-blue">
+    <div className="sdg-body mt-6 container font-body lg:flex lg:flex-row justify-around">
+      <div className="blue-sdg sm:mb-6 text-white sm:pt-4 rounded-lg  bg-altru-blue">
         <img src={SdgBlue} alt=""  className='bg-blue-50 w-4/5 mx-auto mt-8 rounded-lg'/>
 
         <span className='flex gap-2 px-8 py-6'>
@@ -82,7 +84,7 @@ Contact Us    </button>
     <p className='sdg-blue-header px-8 pb-4'>
       Quality Education
     </p>
-    <div className="sdg-body px-8 pb-4">
+    <div className="sdg-body font-body px-8 pb-4">
     <p className='pb-4'>
     We are advancing this SDG through a solution-oriented initiative that enhances digital literacy and promotes STEM education in Sierra Leone. 
     </p>
@@ -94,8 +96,8 @@ Contact Us    </button>
     </p>
     </div>
       </div>
-      <div className="div-two mx-16 flex flex-col gap-10 ">
-        <div className="yello w-full p-8 rounded-lg bg-altru-yellow lg:">
+      <div className="div-two lg:mx-16 sm:mt-6  flex flex-col gap-10 ">
+        <div className="yello w-full p-8 rounded-lg bg-altru-yellow sm:mt-6">
         <span className='flex'>
           <img src={SdgIcon} alt="" className='rounded-xl'/>
           <p>
@@ -104,7 +106,7 @@ Contact Us    </button>
         </span>
     <p className='font-logo text-altru-blue'>
 Climate Change    </p>
-    <div className="sdg-body">
+    <div className="sdg-body font-body">
     <p>
     We are advancing this SDG through a solution-oriented initiative that enhances digital literacy and promotes STEM education in Sierra Leone. 
     </p>
@@ -116,7 +118,7 @@ Climate Change    </p>
     </p>
     </div>
         </div>
-        <div className="black bg-black rounded-lg p-8">
+        <div className="black bg-black rounded-lg p-8 container sm:w-full">
         <span className='flex gap-2'>
           <img src={SdgIcon} alt="" className='rounded-xl text-white'/>
           <p className='text-white'>
@@ -137,15 +139,17 @@ Climate Change    </p>
     </div>
  
 
-<div className="projects-main mx-auto bg-altru-yellow py-8 my-16 ">
+<div className="projects-main bg-altru-yellow py-8 mb-20 ">
 
-<div className="about bg-blue-50 w-max px-4 py-2 my-4 rounded-3xl text-blue-700 mx-40">Our Projects</div>
+    <div className="container">
+    <div className="about bg-blue-50 w-max px-4 py-2 my-4 rounded-3xl text-blue-700 font-body">Our Projects</div>
 
-  <p className="font-logo mx-40">
+  <p className="font-logo mx-0 text-2xl">
   Discover Our  
 <span className="text-altru-blue"> Sustainable Initiatives</span>  for Impact
   </p>
-  <div className="projects lg:grid-cols-2 lg:grid-rows-3 gap-10  mx-auto w-4/5 my-20 p-8">
+  </div>
+  <div className="projects lg:grid-cols-2 lg:grid-rows-3 gap-10 container mt-10 p-8">
 
  
   <div className="hub lg:h-96 lg:w-full rounded-md p-8">
@@ -232,6 +236,9 @@ Climate Change    </p>
   </div>
 </div>
     </div>
+    <div className="bg-white my-10">
+   <TeamGrid />
+   </div>
     </div>
   )
 }

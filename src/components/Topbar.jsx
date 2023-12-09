@@ -155,7 +155,7 @@ function NavList() {
         <ListItem className="flex items-center gap-2 py-2 pr-4 hover:text-altru-blue">Home</ListItem>
       </Typography>
       </Link>
-      <Link to={"/about-us"}>
+      <Link to={"/about"}>
       <Typography
         as="a"
         href="#"

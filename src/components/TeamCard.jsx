@@ -1,86 +1,75 @@
 import React from 'react'
+import { Typography } from "@material-tailwind/react";
 import Abdul from '../assets/images/abdul.png'
+import { Fragment, useState } from 'react'
+
+import { Link } from 'react-router-dom'
+import { faArrowRight, } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  Popover,
-  PopoverHandler,
-  PopoverContent,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
   Button,
-  Typography,
-} from "@material-tailwind/react";
+} from '@chakra-ui/react'
+import { useDisclosure } from '@chakra-ui/react'
 
-function TeamCard() {
+function TeamCard ({ image, founderName, founderDescription, link, title }) {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+
   return (
-    <div>
-      <div className="card">
- 
- 
+  <div>
 
-      <Popover placement='left-end'>
-      <PopoverHandler>
-        <div className='relative'>
-        <img src={Abdul} alt="" className='relative ' />
-        <Button className='absolute bottom-10 left-10 bg-altru-pink text-black shadow-none'>
-          <p className="font-logo capitalize">Abdul Kareem Sesay</p>
-          <p className='font-body'>
-            Co-Founder
-          </p>
-        </Button>
-        </div>
-      </PopoverHandler>
+<div className="team-card relative mt-10">
+  <img src={image} alt="" className="rounded-lg w-full" />
+  <button className="bg-altru-pink absolute bottom-10 w-4/5 text-center px-6 py-2 left-1/2 transform flex flex-col -translate-x-1/2 rounded-lg" onClick={onOpen}>
+    <p className='font-display text-sm'>
+    {founderName}
+      </p>
+      <p className='font-body text-xs'>
+      {title}
+      </p>
+   
+  </button>
+</div>
+    <>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalCloseButton />
+          <ModalBody>
+            <div className="flex flex-row w-full text-xs">
+              <img src={image} alt='Founder' className="rounded-lg w-1/3 ms-0 me-6 object-cover" />
+              <div className="flex flex-col">
+                <p className='my-10'>
+                  {founderDescription}
 
-      <PopoverContent className="z-[999] grid w-4/5 h-1/3 overflow-hidden p-0">
-      <div className="min-h-full !w-full p-3">
-          <img
-src={Abdul}            alt="Abdul"
-            className="h-full w-1/3 rounded-lg"
-          />
-        </div>
-        <div className="p-4 w-2/3">
-          <Typography color="blue-gray" className="mb-2 text-lg font-bold">
-            Material Tailwind
-          </Typography>
-          <Typography
-            variant="small"
-            color="gray"
-            className="mb-14 font-normal text-blue-gray-500"
-          >
-           Abdul Karim Sesay is a creative technologist, an aspiring researcher, and a practicing data analyst with over a decade of experience in technology innovation. He has completed half a dozen projects, mostly climate tech and awareness related in his home country, and the success of these projects inspired a movement that supported the founding of the Altruistech Group of Innovations.
-          </Typography>
-          <a href="#" className="-ml-3 inline-block">
-            <Button
-              size="sm"
-              variant="text"
-              className="flex items-center gap-x-2 capitalize"
-            >
-              Read More
-              <svg
-                width="7"
-                height="12"
-                viewBox="0 0 7 12"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.25 1.91669L5.33333 6.00002L1.25 10.0834"
-                  stroke="#212121"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </Button>
-          </a>
-        </div>
- 
-      
-      </PopoverContent>
-    </Popover>
+                  </p>
+                  <div className='relative
+         rounded-full bg-altru-yellow h-10 w-10'> 
 
-      </div>
+        </div>
+        <div className='text-altru-blue absolute bottom-4 right-28'>
+          <Link to={link}>
+Link to Linkedin Profile          <span>
+            <FontAwesomeIcon icon={faArrowRight} className='text-altru-blue text-center ps-2' />
+          </span>
+          </Link>
+        </div>
+              </div>
+            </div>
+          </ModalBody>
+
+       
+        </ModalContent>
+      </Modal>
+    </>
     </div>
   )
-
 }
 
-
-export default TeamCard
+export default TeamCard;

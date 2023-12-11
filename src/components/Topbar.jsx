@@ -48,15 +48,6 @@ const navListMenuItems = [
     icon: GlobeEuropeAfricaIcon,
     link: "/environmental-compliance-innovation"
   },
- 
-  {
-    title: "Kadula Farms",
-    description: "revolutionizing post-harvest loss management in agriculture.",
-    icon: SunIcon,
-    link: "/kadula-farms"
-   
-    
-  },
   
 ];
  

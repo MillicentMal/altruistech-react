@@ -41,11 +41,11 @@ Contact Us    </button>
     </div>
     <Partners/>
 
-    <div className="sdgs pb-10 ">
-      <div className="sdg-header mx-6">
-        <div className="sdg-left">
-        <div className="about bg-blue-50 w-max px-4 py-2 my-4 rounded-3xl text-blue-700">About Us</div>
-        <h1 className='sdg-logo'>
+    <div className="sdgs h-max mb-0">
+      <div className="lg:flex lg:flex-row container">
+        <div className="sdg-left lg:me-14">
+        <div className="about bg-blue-50 w-max px-4 py-2 my-4 font-body rounded-3xl text-blue-700">About Us</div>
+        <h1 className='sdg-logo w-full'>
           Our SDG
         </h1>
         <h1 className='sdg-logo'>
@@ -53,7 +53,7 @@ Contact Us    </button>
          & <span className='text-altru-blue'>Impact</span>  Story.
         </h1>
       </div>
-      <div className="sdg-right ps-5 lg:w-1/2 sm:mt-6 sm:w-4/5 lg:ms-32 relative border-l-4 border-l-altru-yellow">
+      <div className="sdg-right ps-5 lg:ms-36 lg:w-1/2 sm:mt-6 sm:w-4/5 relative border-l-4 border-l-altru-yellow">
         <p>
         We believe that technology can be a powerful force for good, and we are using our skills and expertise to develop solutions that can make a real difference in the world.
         </p>
@@ -71,8 +71,8 @@ Contact Us    </button>
         </Link>
       </div>
       </div>
-    <div className="sdg-body mt-6 container font-body lg:flex lg:flex-row justify-around">
-      <div className="blue-sdg sm:mb-6 text-white sm:pt-4 rounded-lg  bg-altru-blue">
+    <div className="lg:grid container my-10 h-max  lg:grid-rows-1  lg:grid-cols-2 sm:flex sm:flex-col gap-16">
+      <div className="lg:ms-0 lg:ps-0 font-body pb-10 sm:mb-6 mt-10  text-white rounded-lg bg-altru-blue">
         <img src={SdgBlue} alt=""  className='bg-blue-50 w-4/5 mx-auto mt-8 rounded-lg'/>
 
         <span className='flex gap-2 px-8 py-6'>
@@ -96,15 +96,15 @@ Contact Us    </button>
     </p>
     </div>
       </div>
-      <div className="div-two lg:mx-16 sm:mt-6  flex flex-col gap-10 ">
-        <div className="yello w-full p-8 rounded-lg bg-altru-yellow sm:mt-6">
+      <div className="flex flex-col gap-10 h-full">
+        <div className="bg-altru-yellow mt-10 p-6 font-body rounded-lg">
         <span className='flex'>
           <img src={SdgIcon} alt="" className='rounded-xl'/>
-          <p>
+          <p className='font-body'>
             SDG 4
           </p>
         </span>
-    <p className='font-logo text-altru-blue'>
+    <p className='font-logo text-2xl my-4 text-altru-blue'>
 Climate Change    </p>
     <div className="sdg-body font-body">
     <p>
@@ -118,13 +118,13 @@ Climate Change    </p>
     </p>
     </div>
         </div>
-        <div className="black bg-black rounded-lg p-8 container sm:w-full">
+        <div className="black bg-black font-body h-full rounded-lg p-8 container sm:w-full">
         <span className='flex gap-2'>
           <img src={SdgIcon} alt="" className='rounded-xl text-white'/>
           <p className='text-white'>
           SDG 13          </p>
         </span>
-    <p className='sdg-blue-header font-altru-yellow'>
+    <p className='sdg-blue-header mt-6 text-2xl mb-4 font-altru-yellow'>
     Good Health & Wellbeing    </p>
     <div className="sdg-body text-white">
     <p>
@@ -139,7 +139,7 @@ Climate Change    </p>
     </div>
  
 
-<div className="projects-main bg-altru-yellow py-8 mb-20 ">
+<div className="projects-main bg-altru-yellow py-8 mb-20  ">
 
     <div className="container">
     <div className="about bg-blue-50 w-max px-4 py-2 my-4 rounded-3xl text-blue-700 font-body">Our Projects</div>
@@ -149,12 +149,12 @@ Climate Change    </p>
 <span className="text-altru-blue"> Sustainable Initiatives</span>  for Impact
   </p>
   </div>
-  <div className="projects lg:grid-cols-2 lg:grid-rows-3 gap-10 container mt-10 p-8">
+  <div className="projects lg:grid-cols-2 lg:grid-rows-2 gap-10 container mt-10 p-8">
 
  
   <div className="hub lg:h-96 lg:w-full rounded-md p-8">
     <div>
-      <p className='flex flex-row text-white'>
+      <p className='flex flex-row text-white font-body'>
         <img src={SdgIcon} alt="" /> SDG 4, 5, 9, 17
       </p>
     </div>
@@ -170,9 +170,9 @@ Climate Change    </p>
     </button>
     </div>
   </div>
-  <div className="health h-full lg:pb-10  sm:p-8 rounded-md lg:p-4">
+  <div className="health h-full lg:pb-10  p-8 rounded-md ">
     <div>
-      <p className='flex flex-row text-white'>
+      <p className='flex flex-row text-white font-body'>
         <img src={SdgIcon} alt="" /> SDG 1, 3, 10, 17
       </p>
     </div>
@@ -202,13 +202,13 @@ Climate Change    </p>
     </button>
     </div>
   </div>
-  <div className="env h-96 lg:pb-10  sm:p-8 rounded-md lg:p-4">
+  <div className="env h-96 lg:pb-10  p-8 rounded-md lg:p-4">
     <div>
-      <p className='flex flex-row text-white'>
+      <p className='flex flex-row text-white gap-2 text-center font-body'>
         <img src={SdgIcon} alt="" /> SDG 8, 12, 13, 15, 17
       </p>
     </div>
-    <div className='translate-y-24'> 
+    <div className='translate-y-24 '> 
       <p className="font-logo text-white pb-2">
       Altruistech Environmental Compliance Guage     </p>
       <p className=' font-body text-white pb-2'>
@@ -218,22 +218,7 @@ Climate Change    </p>
     </button>
     </div>
   </div>
-  <div className="farm h-96 rounded-md p-8">
-    <div>
-      <p className='flex flex-row text-white'>
-        <img src={SdgIcon} alt="" /> S.D.G. 1, 2, 9, 10, 12, 13, 17
-      </p>
-    </div>
-    <div className='translate-y-24'> 
-      <p className="font-logo text-white pb-2">
-      Kadula Farm     </p>
-      <p className=' font-body text-white pb-2'>
-      Providing real-time supply chain traceability solutions that empower stakeholders to make informed decisions, minimize waste, and ensure food safety. </p>            
-      <button className="button my-4 bg-altru-blue hover:bg-blue-700 text-white py-2 px-4 rounded">
-        Learn More
-    </button>
-    </div>
-  </div>
+
 </div>
     </div>
     <div className="bg-white my-10">

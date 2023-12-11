@@ -37,13 +37,14 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
   </button>
 </div>
     <>
+    <div className="sm:container sm:w-4/5">
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
           <ModalBody>
-            <div className="flex flex-row w-full text-xs">
-              <img src={image} alt='Founder' className="rounded-lg w-1/3 ms-0 me-6 object-cover" />
+            <div className="lg:flex sm:mx-auto relative lg:flex-row sm:flex sm:flex-col lg:w-full sm:w-4/5 text-xs">
+              <img src={image} alt='Founder' className="rounded-lg lg:w-1/3 sm:w-full lg:ms-0 lg:me-6  object-cover" />
               <div className="flex flex-col">
                 <p className='my-10'>
                   {founderDescription}
@@ -53,10 +54,10 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
          rounded-full bg-altru-yellow h-10 w-10'> 
 
         </div>
-        <div className='text-altru-blue absolute bottom-4 right-28'>
+        <div className='absolute bottom-4 lg:right-28 right-20'>
           <Link to={link}>
 Link to Linkedin Profile          <span>
-            <FontAwesomeIcon icon={faArrowRight} className='text-altru-blue text-center ps-2' />
+            <FontAwesomeIcon icon={faArrowRight} className='text-center ps-2' />
           </span>
           </Link>
         </div>
@@ -67,8 +68,10 @@ Link to Linkedin Profile          <span>
        
         </ModalContent>
       </Modal>
+      </div>
     </>
     </div>
+    
   )
 }
 

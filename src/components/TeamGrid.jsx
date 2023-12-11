@@ -15,7 +15,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Team = [ 
     {
         "name": "Abdul Kareem Sesay",
-        "title": "Founder & CEO",
+        "title": "Founder",
         "description": " Abdul Karim Sesay is a creative technologist, an aspiring researcher, and a practicing data analyst with over a decade of experience in technology innovation. He has completed half a dozen projects, mostly climate tech and awareness related in his home country, and the success of these projects inspired a movement that supported the founding of the Altruistech Group of Innovations.",
         "link": "https://www.linkedin.com/in/abdul-karim-sesay-2858b6203/",
         "image": Abdul
@@ -30,16 +30,6 @@ const Team = [
         "image": Daniel
 
     }, 
-    {
-      "name": "Abdulai Barrie",
-      "title": "Co-founder",
-      "description": "Abdulai is a creative technologist, an aspiring researcher, and a practicing data analyst with over a decade of experience in technology innovation. He has completed half a dozen projects, mostly climate tech and awareness related in his home country, and the success of these projects inspired a movement that supported the founding of the Altruistech Group of Innovations.",
-      "link": "https://www.linkedin.com/in/abdul-karim-sesay-2858b6203/", 
-      "image": Abdulai
-
-
-  },
-   
    
 
     {
@@ -106,7 +96,7 @@ View All Our Team Members          <span>
       </div>
 </div>
       {renderItems}
-      <div className='lg:grid lg:row-start-2'>
+      <div className='lg:grid lg:row-start-2 lg:col-span-2'>
         
       </div>
       </div>

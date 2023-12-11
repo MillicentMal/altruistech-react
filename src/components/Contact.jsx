@@ -49,20 +49,20 @@ function Contact() {
                 Speak with our friendly team
                 </p>
                 <div className="flex flex-col">
-                <Link className='pb-2'>
-                <FontAwesomeIcon icon={faFacebookF} className='pe-2' /> Message on Facebook
+                <Link className='pb-2 font-body'>
+                <FontAwesomeIcon icon={faFacebookF} className='pe-2 font-body'  /> Message on Facebook
                 </Link>
-                <Link className='pb-2'>
-                <FontAwesomeIcon icon={faTwitter} className='pe-2' /> Message on Twitter
+                <Link className='pb-2 font-body'>
+                <FontAwesomeIcon icon={faTwitter} className='pe-2 font-body' /> Message on Twitter
                 </Link>
-                <Link className='pb-2'>
-                <FontAwesomeIcon icon={faInstagram} className='pe-2' /> Follow Us on Instagram
+                <Link className='pb-2 font-body'>
+                <FontAwesomeIcon icon={faInstagram} className='pe-2 font-body' /> Follow Us on Instagram
                 </Link>
-                <Link className='pb-2'>
-                <FontAwesomeIcon icon={faEnvelope} className='pe-2'/> Shoot us an Email
+                <Link className='pb-2 font-body'>
+                <FontAwesomeIcon icon={faEnvelope} className='pe-2 '/> Shoot us an Email
                 </Link>
-                <Link className='pb-2'>
-                <FontAwesomeIcon icon={faLinkedin} className='pe-2' /> Connect on Linkedin
+                <Link className='pb-2 font-body'>
+                <FontAwesomeIcon icon={faLinkedin} className='pe-2 font-body' /> Connect on Linkedin
                 </Link>
                 </div>
             </div>

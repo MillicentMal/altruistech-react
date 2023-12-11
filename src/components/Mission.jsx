@@ -9,7 +9,7 @@ function Mission() {
            <h1 className="missions-header font-display w-full">
             Join us in Our <span className='text-altru-blue'>Mission. </span> 
            </h1>
-           <p className="missions-body lg:w-2/3">
+           <p className="missions-body lg:w-2/3 font-body">
            Altruistech Group of Innovations invites you on our journey to create a better world for all. Together, we can turn our shared vision of a more sustainable, equitable, and prosperous future into a reality.
            </p>
            <button className="button bg-altru-blue lg:w-1/2 sm:w-2/3  hover:bg-blue-700 text-white py-2 px-4 rounded">

@@ -71,24 +71,24 @@ function Contact() {
 <form action="" className='flex flex-col gap-6'>
     <div className="names lg:flex lg:flex-row sm:flex gap-14 sm:flex-col">
         <fieldset className='flex flex-col'>
-            <label htmlFor="first_name" className=''>First Name</label>
+            <label htmlFor="first_name" className=''>First Name <span className="text-red-800 font-bold">*</span> </label>
             <input className='rounded-lg px-4 py-2' type="text" name="name" id="first_name" placeholder='Enter your First Name' />
         </fieldset>
         <fieldset className='flex flex-col'>
-            <label htmlFor="last_name" className=''>Last Name</label>
+            <label htmlFor="last_name" className=''>Last Name <span className="text-red-800 font-bold">*</span> </label>
             <input className='rounded-lg px-4 py-2' type="text" name="name" id="last_name" placeholder='Enter your Last Name' />
         </fieldset>
     </div>
     <fieldset className='flex flex-col'>
-            <label htmlFor="email" className=''>Email</label>
+            <label htmlFor="email" className=''>Email<span className="text-red-800 font-bold">*</span> </label>
             <input className='rounded-lg px-4 py-2 w-full' type="text" name="email" id="email" placeholder='Enter your Email' />
         </fieldset>
         <fieldset className='flex flex-col'>
-            <label htmlFor="phone" className=''>Phone</label>
+            <label htmlFor="phone" className=''>Phone<span className="text-red-800 font-bold">*</span> </label>
             <input className='rounded-lg px-4 py-2 w-full' type="text" name="phone" id="phone" placeholder='Enter your Phone Number' />
             </fieldset>
             <fieldset>
-                <label htmlFor="message" className=''>Message</label>
+                <label htmlFor="message" className=''>Message <span className="text-red-800 font-bold">*</span> </label>
                 <textarea className='rounded-lg px-4 py-2 w-full' name="message" id="message" cols="30" rows="10" placeholder='Enter your Message'></textarea>
             </fieldset>
 

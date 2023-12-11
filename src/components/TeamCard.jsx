@@ -37,7 +37,6 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
   </button>
 </div>
     <>
-    <div className="sm:container sm:w-4/5">
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
@@ -54,7 +53,7 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
          rounded-full bg-altru-yellow h-10 w-10'> 
 
         </div>
-        <div className='absolute bottom-4 lg:right-28 right-20'>
+        <div className='absolute bottom-4 lg:right-28 sm:right-20'>
           <Link to={link}>
 Link to Linkedin Profile          <span>
             <FontAwesomeIcon icon={faArrowRight} className='text-center ps-2' />
@@ -68,7 +67,6 @@ Link to Linkedin Profile          <span>
        
         </ModalContent>
       </Modal>
-      </div>
     </>
     </div>
     

@@ -29,6 +29,7 @@ module.exports = withMT({
         'altru-pink': '#F8FFCF', 
         'altru-mango': '#FCB713', 
         'light-blue': '#E4EDFF'
+        
       },
     },
   },

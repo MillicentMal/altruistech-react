@@ -186,7 +186,7 @@ function NavList() {
   );
 }
  
-export function Topbar() {
+export function Topbar({background}) {
   const [openNav, setOpenNav] = React.useState(false);
  
   React.useEffect(() => {
@@ -197,7 +197,7 @@ export function Topbar() {
   }, []);
  
   return (
-    <Navbar className="mx-auto rounded-none bg-inherit shadow-none  py-2">
+    <Navbar className={`mx-auto rounded-none  shadow-none border-0 border-inherit  py-2 bg-${background}`}>
       <div className="flex items-center justify-between text-blue-gray-900">
         <span
           as="a"

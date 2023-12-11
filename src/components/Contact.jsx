@@ -12,8 +12,8 @@ function Contact() {
 
   return (
 <div>
-    <div className='contact-div'>
-        <Topbar className="mb-0"/>
+    <div className='contact-div bg-light-blue'>
+        <Topbar className="mb-0" background='light-blue'/>
         <div className='text-center mt-0 pb-40'>
             <div className="relative mt-10 mb-2 h-20 mx-auto w-96">
         <img src={Star} alt="Star"  className='absolute top-0 left-0 w-20 h-16'/>
@@ -21,7 +21,7 @@ function Contact() {
         Get in <span className="text-altru-blue">Touch</span>  with Us 
         </p>
         </div>
-        <p className='w-1/2 mx-auto'>
+        <p className='w-1/2 mx-auto font-body'>
         We're here to assist you! Whether you have questions, feedback, or simply want to connect, our team is ready to engage in meaningful conversations with you
         </p>
         </div>

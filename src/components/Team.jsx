@@ -14,15 +14,15 @@ function Team() {
            
             <div>
                 <div className="relative h-24">
-                <img src={Star} alt="" className='absolute h-20' />
-                <p className='font-logo text-3xl absolute top-8 left-10'>
+                <img src={Star} alt="" className='absolute h-16' />
+                <p className='font-logo text-3xl absolute top-6 left-8'>
                 Our <span className="text-altru-blue">Team</span> 
                 </p>
                 </div>
-  <p className='pb-4'>
+  <p className='pb-4 font-body'>
   Our team is made up of dedicated individuals committed to driving positive change and advancing the United Nations Sustainable Development Goals.
   </p>
-  <p>
+  <p className='font-body'>
   With diverse backgrounds and expertise in technology, sustainability, and innovation, our team collaborates tirelessly to make a meaningful impact. We believe that collective action is the key to addressing global challenges, and our team embodies this spirit as we work together to create innovative solutions for a better world.
   </p>
             </div>

@@ -69,7 +69,7 @@ function TeamGrid() {
     <div className="bg-white py-16">
     <div className='bg-altru-yellow mx-auto my-10 pt-0 pb-10 container' id='team-corner'>
                   <div className="lg:grid lg:grid-cols-4 gap-6 lg:grid-rows-">
-<div className="innovators-header ps-6 col-span-2 top-0 left-0 bg-white rounded-e-md">
+<div className="innovators-header ps-6 col-span-2 top-0 sm:pb-4 left-0 bg-white rounded-e-md">
 <div className="rounded-3xl bg-altru-pink w-max text-altru-blue  px-4 py-3 my-4 font-body">
   Our Team
 </div>

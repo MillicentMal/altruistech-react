@@ -80,6 +80,26 @@ gap: 1em;
       align-content: flex-start;
       justify-content: flex-start;
   }
+  .home-heading {
+    font-size: 24px;
+    left: 10%;
+    width: 100%;
+    text-align: left;
+
+  }
+.heading-star {
+  left: 5%;
+}
+.button-star {
+  width: 100%;
+}
+  .star-header-home {
+    height: 250px;
+    width: 80%;
+    text-align: center;
+
+
+  }
   .custom-button-group {
     position: absolute;
     bottom: 0%;
@@ -103,6 +123,8 @@ gap: 1em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+  
+
   .hub-star {
     left: 10%;
 
@@ -199,6 +221,13 @@ width: 80%;
   margin-top: 64px;
   margin-left: 24px;
  }
+ #popover {
+  width: 80%;
+}
+.pop-image {
+  width: 100%;
+  object-fit: fill;
+}
 }
 
 @media (min-width: 766px) {
@@ -206,6 +235,15 @@ width: 80%;
     margin-left: 120px;
     margin-right: 120px;
     
+  }
+  #popover {
+    width: 60%;
+    padding-left: 0%;
+
+  }
+  .pop-content {
+    padding-left: 5%;
+    margin: 0px 0px 0px 0px;
   }
   #team-corner {
     padding-left: 0%;
@@ -414,4 +452,8 @@ word-wrap: break-word
 
 .card {
   margin-right: 1rem;
+}
+
+.animated-image {
+  transition: opacity 1s ease-in-out;
 }

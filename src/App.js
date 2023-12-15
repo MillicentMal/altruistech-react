@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 import Mission from './components/Mission';
 import TeamCard from './components/TeamCard';
 import TeamGrid from './components/TeamGrid';
+import ModalComponent from './components/Modal';
 // import Testimonial from './components/Testimonial';
 
 function App() {

@@ -19,6 +19,7 @@ module.exports = withMT({
           'DM Sans', 'sans-serif'],
         'display': ['ClashDisplay-Semibold', 'sans-serif'],
           'logo': ['ClashDisplay-Bold', 'sans-serif'],
+          'button': ['ClashDisplay-Regular', 'sans-serif'],
 
       }, 
       colors: {

@@ -69,8 +69,8 @@ function Contact() {
             </div>
 <div className="contact-form">
 <form action="" className='flex flex-col gap-6'>
-    <div className="names lg:flex lg:flex-row sm:flex gap-14 sm:flex-col">
-        <fieldset className='flex flex-col'>
+    <div className="names lg:flex lg:flex-row sm:flex lg:gap-14 sm:flex-col  sm:gap-4">
+        <fieldset className='flex flex-col sm:mb-4'>
             <label htmlFor="first_name" className=''>First Name <span className="text-red-800 font-bold">*</span> </label>
             <input className='rounded-lg px-4 py-2' type="text" name="name" id="first_name" placeholder='Enter your First Name' />
         </fieldset>

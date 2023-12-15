@@ -8,23 +8,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import SdgIcon from '../assets/images/sdg-icon.svg'
 import Partners from './Partners'
+import Sixteen from '../assets/images/16.svg'
 
 function About() {
   return (
     <div className='about-home overflow-x-hidden'>
-        <Topbar />
-        <div className="main-header my-20 sm:flex sm:flex-col sm:gap-6 lg:flex lg:flex-row lg:gap-10 lg:justify-evenly  lg:content-center">
-        <div>
-            <img src={Star} alt="" />
-            <p className='font-logo text-3xl '>
-            We started 
+        <Topbar background={"altru-pink"}/>
+        <div className="main-header container my-20 sm:flex sm:flex-col sm:gap-6 lg:flex lg:flex-row lg:gap-10 lg:justify-evenly  lg:content-center">
+        <div className='relative lg:w-1/2 sm:w-full h-28'>
+            <img src={Star} alt="" className='left-0 bottom-0 w-14' />
+            <p className='font-logo text-3xl absolute top-8 left-6'>
+           <span>We started </span> <br/>
 this a <span className='text-altru-blue'>while ago
     </span>  and...
             </p>
         </div>
         <div className="header-body lg:w-1/2 sm:ms-6
-         border-l-altru-yellow border-l-4 ps-6 py-6">
-            <p>
+         border-l-altru-yellow border-l-4 ps-6">
+            <p className='font-body'>
             We are on a mission to create a more sustainable and equitable world by providing innovative solutions that address the United Nations Sustainable Development Goals (SDGs), one project at a time. We are committed to driving positive change, leaving a lasting impact on communities, and promoting a better future  for all.
             </p>
         </div>
@@ -36,14 +37,18 @@ this a <span className='text-altru-blue'>while ago
             <img src={Top} alt="" />
             <div className="top-div z-10 absolute sm:w-4/5  top-3/4 sm:inset-x-10 p-6 lg:inset-x-10 lg:flex lg:flex-row sm:flex sm:flex-col bg-altru-yellow mx-auto lg:w-4/5 lg:p-20 rounded-lg">
                 <div>
-                    <img src={Abdul} alt="" className='border-8 lg:w-2/3 sm:w-4/5 border-white rounded-lg' />
+                    <img src={Abdul} alt="" className='border-8 lg:w-2/3 sm:w-4/5 border-white border-solid rounded-lg' />
 
                 </div>
                 <div className='lg:w-1/2 flex flex-col gap-6'>
-                    <p className="font-logo">
-                        Our Vision
-                    </p>
-             <p>
+                    <div className="relative h-10">
+                        <img src={Sixteen} alt="" className='absolute top-0 z-10 left-0 w-10' />
+                        <p className="font-logo absolute top-2 left-4 text-lg z-20">
+                            Our <span className='text-altru-blue'> Vision .</span>
+                        </p>
+                    </div>
+            
+             <p className='font-body'>
              A world where everyone has access to necessities, enjoys equal opportunities, and lives in harmony with the planet. We envision a future where the 17 SDGs are not just ambitious goals but a global reality and where our projects inspire and empower others to take action for a better world.
              </p>
              <button className="button bg-altru-blue hover:bg-blue-700 w-1/2 text-white py-2 px-4 rounded">

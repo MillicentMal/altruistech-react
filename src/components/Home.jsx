@@ -8,18 +8,34 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight, } from '@fortawesome/free-solid-svg-icons'
 import SdgBlue from '../assets/images/blue-sdg.svg'
 import SdgIcon from '../assets/images/sdg-icon.svg'
-import Hub from '../assets/images/altru-hub.svg'
-import { Typography } from '@material-tailwind/react'
 import TeamGrid from './TeamGrid'
-import Testimonials from './Testimonials'
+import { useState, useEffect } from "react";
+import Health from '../assets/images/health-home.svg'
+import Water from '../assets/images/water-home.svg'
+import Env from '../assets/images/Env-home.svg'
 
 
 
+const images = [
+  Creativity, 
+  Water, 
+  Env, 
+  Health
+];
 function Home() {
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 1000); // change image every 3 seconds
+
+    return () => clearInterval(interval); // cleanup on unmount
+  }, []);
   return (
     <div className='bg-altru-pink overflow-x-hidden'>
-     <Topbar/>
-     <div className="relative mb-4  lg:mx-32 sm:ms-6 ">
+     <Topbar background={"altru-pink"}/>
+     <div className="relative mb-4  lg:mx-32 sm:ms-6 my-20">
         <img className='absolute top-0 left-0' src={Star} alt="" />
         <div className="absolute rounded-3xl bg-white px-4 py-2 top-6 left-8 text-altru-orange font-body">
         Fostering Sustainable Future.
@@ -28,16 +44,17 @@ function Home() {
 </div>
      <div className='home lg:py-10 sm:px-6 sm:py-20'>
     
-        <div className='mission-text lg:w-1/2 lg:ps-32'>
+        <div className='mission-text lg:w-1/2 lg:ps-32 my-20'>
            <h1 className="missions-header font-display w-full">
            Empowering a More <span className='text-altru-blue'>Sustainable  </span> World 
            </h1>
-           <p className="missions-body lg:w-full">
+           <p className="missions-body lg:w-full font-body">
            We are on a journey to tackle global challenges, reduce inequality, and ensure a better future for all. We're dedicated to driving positive change by addressing the UN Sustainable Development Goals through innovative technology, and a strive to create a brighter and more equitable world.           </p>
            <button className="button bg-altru-blue lg:w-1/2 sm:w-2/3  hover:bg-blue-700 text-white py-2 px-4 rounded">
 Contact Us    </button>
         </div>
-        <img className='lg:pe-20 lg:w-1/2' src={Creativity} alt="Missions" />
+        
+        <img className='lg:pe-20 lg:w-1/2 animated-image' src={images[index]} alt="Missions" />
     </div>
     <Partners/>
 
@@ -72,8 +89,8 @@ Contact Us    </button>
       </div>
       </div>
     <div className="lg:grid container my-10 h-max  lg:grid-rows-1  lg:grid-cols-2 sm:flex sm:flex-col gap-16">
-      <div className="lg:ms-0 lg:ps-0 font-body pb-10 sm:mb-6 mt-10  text-white rounded-lg bg-altru-blue">
-        <img src={SdgBlue} alt=""  className='bg-blue-50 w-4/5 mx-auto mt-8 rounded-lg'/>
+      <div className="lg:ms-0 lg:ps-0 font-body pb-20 sm:mb-6 pt-6 mt-10  text-white rounded-lg bg-altru-blue">
+        <img src={SdgBlue} alt=""  className='bg-blue-50 w-4/5 mx-auto sm:mt-8 rounded-lg'/>
 
         <span className='flex gap-2 px-8 py-6'>
           <img src={SdgIcon} alt="" className='rounded-xl'/>
@@ -139,7 +156,7 @@ Climate Change    </p>
     </div>
  
 
-<div className="projects-main bg-altru-yellow py-8 mb-20  ">
+<div className="projects-main bg-altru-yellow  py-8 mb-20  ">
 
     <div className="container">
     <div className="about bg-blue-50 w-max px-4 py-2 my-4 rounded-3xl text-blue-700 font-body">Our Projects</div>

@@ -49,7 +49,7 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
          rounded-full bg-altru-yellow h-10 w-10'> 
 
         </div>
-        <div className='absolute sm:bottom-4 lg:top-44 lg:right-72 sm:right-20'>
+        <div className='linkedin'>
           <Link to={link}>
 Link to Linkedin Profile          <span>
             <FontAwesomeIcon icon={faArrowRight} className='text-center ps-2' />

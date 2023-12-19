@@ -87,6 +87,13 @@ gap: 1em;
     text-align: left;
 
   }
+  .linkedin {
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+
+
+  }
 .heading-star {
   left: 5%;
 }
@@ -239,6 +246,13 @@ width: 80%;
   #popover {
     width: 60%;
     padding-left: 0%;
+
+  }
+  .linkedin {
+    position: absolute;
+    bottom: 27%;
+    left: 42%;
+
 
   }
   .pop-content {

@@ -243,6 +243,10 @@ width: 80%;
     margin-right: 120px;
     
   }
+  .button-star {
+    width: max-content;
+  }
+
   #popover {
     width: 60%;
     padding-left: 0%;
@@ -470,4 +474,10 @@ word-wrap: break-word
 
 .animated-image {
   transition: opacity 1s ease-in-out;
+}
+
+.yellow-div {
+  background-image: url("./assets/images/yellow-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }

@@ -80,6 +80,16 @@ gap: 1em;
       align-content: flex-start;
       justify-content: flex-start;
   }
+  .faqs {
+    display: flex;
+    flex-direction: column-reverse;
+    
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);    
+  }
   .home-heading {
     font-size: 24px;
     left: 10%;

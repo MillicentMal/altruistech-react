@@ -2,7 +2,7 @@ import React from 'react'
 import Abdul from '../assets/images/abdul.png'
 
 import Daniel from '../assets/images/daniel.png'
-
+import Ade from '../assets/images/Ade.jpeg'
 import Gabriel from '../assets/images/gabriel.svg'
 import Axel from '../assets/images/axel.svg'
 import TeamCard from './TeamCard'
@@ -29,6 +29,7 @@ const Team = [
         "image": Daniel
 
     }, 
+
    
 
     {
@@ -46,9 +47,18 @@ const Team = [
         "link": "https://www.linkedin.com/in/abdul-karim-sesay-2858b6203/", 
         "image": Axel
 
+    }, 
+    {
+    "name": "Adediwura Adedigba", 
+    "title": "Product Developer", 
+    'description': 'As a product developer at Altruistech, Adediwura is responsible for the development of the Altruistech products. He is a full-stack developer with a passion for building products that solve real-world problems. He is also a student at the ALU, where he is studying Computer Science.',
+    'link': 'https://www.linkedin.com/in/adedigba-adediwura-a2b202227/', 
+    'image': Ade
+
+
     }
 ]
-function TeamGrid() {
+function TeamGridTwo() {
 
     const renderItems = Team.map(
         ({ image,name, title, description, link}, key) => (
@@ -56,7 +66,7 @@ function TeamGrid() {
             
              
             
-          <TeamCard image={image} founderName={name} founderDescription={description} link={link} title={title} />
+          <TeamCard className="h-full" image={image} founderName={name} founderDescription={description} link={link} title={title} />
  
         
       
@@ -66,36 +76,11 @@ function TeamGrid() {
       );
   return (
     <div className="bg-white py-16">
-    <div className='bg-altru-yellow mx-auto my-10 pt-0 pb-10 container' id='team-corner'>
-                  <div className="lg:grid lg:grid-cols-4 gap-6 lg:grid-rows-">
-<div className="innovators-header ps-6 col-span-2 top-0 sm:pb-4 left-0 bg-white rounded-e-md">
-<div className="rounded-3xl bg-altru-pink w-max text-altru-blue  px-4 py-3 my-4 font-body">
-  Our Team
-</div>
+    <div className='bg-altru-yellow mx-auto pt-10 pb-10 container' id='team-corner'>
+                  <div className="lg:grid lg:grid-cols-3 px-6 gap-6 lg:grid-rows-2">
 
-<p className='font-display text-2xl my-4'>
-  Our <span className='text-altru-blue'>Founding</span> Innovators
-</p>
-
-<div className="sdg-right ps-5 mb-6 sm:mt-6 text-sm me-6 relative font-body border-l-4 border-l-altru-yellow">
-        <p>
-        We believe that technology can be a powerful force for good, and we are using our skills and expertise to develop solutions that can make a real difference in the world.
-        </p>
-        <Link>
-        <div className='relative mt-6
-         rounded-full bg-altru-yellow h-10 w-10'> 
-
-        </div>
-        <div className='text-altru-blue absolute bottom-2 left-8'>
-View All Our Team Members          <span>
-            <FontAwesomeIcon icon={faArrowRight} className='text-altru-blue text-center ps-2' />
-          </span>
-        </div>
-        </Link>
-      </div>
-</div>
       {renderItems}
-      <div className='lg:grid lg:row-start-2 lg:col-span-2'>
+      <div className='lg:grid lg:row-start-2 lg:col-span-1'>
         
       </div>
       </div>
@@ -106,4 +91,4 @@ View All Our Team Members          <span>
   )
 }
 
-export default TeamGrid
+export default TeamGridTwo

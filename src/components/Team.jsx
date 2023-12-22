@@ -2,15 +2,15 @@ import React from 'react'
 import TeamHero from '../assets/images/team.png'
 import Star from '../assets/images/Shape.svg'
 import Topbar from './Topbar'
-import TeamCard from './TeamCard'
+import TeamGridTwo from './TeamGridTwo'
 
 function Team() {
   return (
     <div>
         <div className="team-hero">
             <Topbar/>
-        <div className='hero-div lg:flex lg:flex-row gap-16 lg:ms-16 lg:me-16 lg:py-20'>
-            <img src={TeamHero} alt="" className='lg:w-1/2' />
+        <div className='hero-div pb-20 lg:flex lg:flex-row gap-16 lg:ms-16 lg:me-16 lg:py-20'>
+            <img src={TeamHero} alt="" className='lg:w-1/2 mt-10' />
            
             <div>
                 <div className="relative h-24">
@@ -29,14 +29,14 @@ function Team() {
         </div>
 
         </div>
-        <div className='team-container bg-white'>
+        <div className='team-container bg-white '>
         <div className="team-main bg-inherit mx-auto">
-            <p className="font-logo text-3xl">
+            <p className="font-logo text-3xl mt-16 mb-6  text-center">
                 Our <span className="text-altru-blue">Team</span> of <span className='text-altru-blue'>Innovators</span>
             </p>
-            <div className="grid grid-rows-2 grid-cols-4">
-            <TeamCard/>
-            </div>
+            
+            <TeamGridTwo/>
+          
 
         </div>
         </div>

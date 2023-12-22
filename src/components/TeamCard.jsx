@@ -39,7 +39,7 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
         <PopoverContent className="w-4/5 popover text-black" id='popover'>
         
             <div className="lg:flex pop-content relative mx-0 lg:flex-row text-xs">
-              <img src={image} alt='Founder' className="rounded-lg lg:w-1/3 sm:w-full lg:ms-0 lg:me-6 pop-image lg:object-cover" />
+              <img src={image} alt='Founder' className="rounded-lg lg:w-1/3 h-full sm:w-full lg:ms-0 lg:me-6 pop-image lg:object-cover" />
               <div className="flex flex-col">
                 <p className='my-10'>
                   {founderDescription}

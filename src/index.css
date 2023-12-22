@@ -266,6 +266,11 @@ width: 80%;
   width: 100%;
   object-fit: fill;
 }
+.hub-div {
+  padding: 10px 24px;
+  margin: 64px 24px;
+  width: 90%;
+}
 }
 
 @media (min-width: 766px) {
@@ -516,4 +521,10 @@ word-wrap: break-word
   background-image: url("./assets/images/yellow-background.png");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.hub-div-img {
+  border-width: 10px;
+  border-color: #F8FFCF;
+  border-style: solid;
 }

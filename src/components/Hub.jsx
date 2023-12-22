@@ -17,6 +17,7 @@ import GridImg9 from '../assets/images/grid-9.jpeg'
 import GridImg10 from '../assets/images/grid-10.jpeg'
 import GridImg11 from '../assets/images/grid-11.jpeg'
 import GridImg12 from '../assets/images/grid-12.jpeg'
+import TestimonialsHub from './TestimonialsHub'
 
 
 
@@ -24,10 +25,10 @@ function Hub() {
   return (
     <div>
       <div className="bg-altru-pink">
-        <Topbar/>
+        <Topbar background={"altru-pink"}/>
       <div className="header flex flex-col mt-0 py-24">
         <div className= "self-center px-6 py-2 rounded-3xl" style={{backgroundColor: `#FFF4E0`}}>
-          <p className="text-altru-blue">
+          <p className="text-altru-blue font-body">
           SDG 6, SDG 9, SDG 10
           </p>
         </div>
@@ -44,14 +45,14 @@ function Hub() {
     </button>
       </div>
       </div >
-      <div className="bg-altru-yellow gap-10 mx-auto w-4/5 p-12 lg:flex lg:flex-row my-20">
-        <img src={AD} alt="" className='border-8 w-1/2 hub-pic border-altru-pink' />
+      <div className="bg-altru-yellow hub-div gap-10 mx-auto w-4/5 p-12 lg:flex lg:flex-row my-20">
+        <img src={AD} alt="" className='border-8 hub-div-img w-1/2 rounded-lg hub-pic border-altru-pink' />
     <div>
-      <p className="font-logo text-2xl w-5/6 pb-6">
+      <p className="font-logo text-2xl w-5/6 pb-6 sm:mt-6">
       About the <span className='text-altru-blue'> Creativity</span> Hub
       </p>
     
-    <p className='font-body text-gray-700 sm:w-4/5 sm:text-justify'>
+    <p className='font-body text-gray-700 sm:w-4/5 sm:text-left'>
     This solution uses refurbished electronic waste and STEM materials to enhance youth creativity skills. It promotes STEM education, particularly among Sierra Leone youth, to solve local or community problems in Sierra Leone. This initiative engages young people, mainly girls and women aged 7 to 25, in S.T.E.M. education programs such as workshops, boot camps, and mentorship opportunities tailored around building innovative solutions. We also provide exposure by allowing them to showcase their learnings at a global level.
     </p>
     <div className='relative my-6'>
@@ -77,28 +78,29 @@ Donate Now          <span>
         See Some of The Things we are Doing
         </p>
         </div>
-        <div className="mx-auto flex flex-col my-24">
-          <div className="grid lg:grid-cols-3 lg:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-x-6 gap-y-6 mx-16 self-center h-4/5 overflow-hidden">
+        <div className="mx-auto container flex flex-col my-24">
+          <div className="grid  lg:grid-cols-3 lg:grid-rows-2 sm:grid-cols-2 sm:grid-rows-3 gap-x-6 gap-y-6 self-center h-4/5 overflow-hidden">
           <img src={GridImg1} alt="" className="rounded-md lg:h-full object-cover" />
           <img src={GridImg2} alt="" className="rounded-md lg:h-full object-cover " />
           <img src={GridImg3} alt="" className="rounded-md lg:h-full object-cover" />
           <img src={GridImg4} alt="" className="rounded-md lg:h-full object-cover col-span-2 order-last" />
           <img src={GridImg5} alt="" className="rounded-md lg:h-full object-cover" />
           </div>
-          <div className="grid grid-cols-2 my-6 grid-rows-1  gap-x-6 mx-16 self-center">
+          <div className="grid grid-cols-2 my-6 grid-rows-1  gap-x-6 self-center">
           <img src={GridImg6} alt="" className="rounded-md lg:h-full object-cover" />
           <img src={GridImg7} alt="" className="rounded-md lg:h-full object-cover" />
           </div>
-          <div className="lg:grid last-grid lg:grid-cols-3 lg:grid-rows-2 gap-x-6 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-y-10 gap-y-6 mx-16 self-center h-4/5 overflow-hidden">
+          <div className="lg:grid last-grid lg:grid-cols-3 lg:grid-rows-2 gap-x-6 sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-y-10 gap-y-6 self-center h-4/5 overflow-hidden">
           <img src={GridImg8} alt="" className="rounded-md lg:h-full object-cover" />
           <img src={GridImg9} alt="" className="rounded-md lg:h-full object-cover" />
           <img src={GridImg10} alt="" className="rounded-md lg:h-full object-cover" />
-          <img src={GridImg11} alt="" className="rounded-md lg:h-full object-cover " />
+          <img src={GridImg11} alt="" className="rounded-md lg:h-full object-cover w-full" />
           <img src={GridImg12} alt="" className="rounded-md lg:h-full object-cover col-span-2 w-full" />
           </div>
         </div>
 
     </div>
+    <TestimonialsHub/>
     </div>
   )
 }

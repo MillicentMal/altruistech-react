@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight} from '@fortawesome/free-solid-svg-icons'
 
 
-function TestimonialsHealth() {
+function TestimonialsWater() {
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -43,74 +43,75 @@ const ButtonGroup = ({ next, previous }) => {
     )
   };
 return (
-    <div className="py-20 container my-20 relative bg-white">
+    <div className="py-20 container my-24 relative bg-white">
       <div className="flex flex-col justify-between !absolute top-0">
       <p className="font-body bg-altru-pink px-4 py-2 w-max rounded-2xl text-altru-blue">Testimonials</p>
       <p className="font-display text-2xl">
-        See what people are saying <br/> about Altruis-Health
-      </p>
+      See What People are Saying <br/> <span className="text-altru-blue">
+about the Clean Water Innovation.  </span>    </p>
       </div>
   <Carousel arrows={false} className="mt-16" responsive={responsive} renderButtonGroupOutside={true} customButtonGroup={<ButtonGroup />}>
-    <div className="card h-full bg-light-blue p-6 rounded-lg flex flex-col gap-4">
+    <div className="card h-full bg-altru-pink p-6 rounded-lg flex flex-col gap-4">
       <div className="card-img flex flex-row gap-4">
         <img src={Musa} alt="" className='w-24 h-24 rounded-full' />
         <div className="card-img-text self-center">
           <p className="font-display">
-          Ivy Getanda          </p>
+          Musa Bangura       </p>
           <p className="font-body text-gray-900 text-xs">
-          Respiratory Therapist          </p>
+          Farmer         </p>
         </div>
         </div>
         <p className="font-body text-sm">
-        Highly recommendable solution for health professionals looking for rewarding opportunities.
-        <span className="text-altru-blue">The solution provides a wide range of job openings tailored to your expertise and career goals.</span>  It's a valuable resource for anyone seeking to advance their career in the healthcare industry.        </p>
+        As a farmer, clean water is vital for my crops and my family. 
+        <span className="text-altru-blue">Altruistech's solution has made it so much easier to access clean and safe water</span> which benefits our entire village. </p>
       
     </div>
-    <div className="card h-full bg-light-blue mx-6 p-6 rounded-lg flex flex-col gap-4">
+    <div className="card h-full bg-altru-pink mx-6 p-6 rounded-lg flex flex-col gap-4">
       <div className="card-img flex flex-row gap-4">
         <img src={Daniel} alt="" className='w-24 h-24 rounded-full' />
         <div className="card-img-text self-center">
           <p className="font-display">
-          Daniel James          </p>
+         Aminata Jalloh         </p>
           <p className="font-body text-xs text-gray-700">
-          Chief Medical Officer
+          IoT Technician
           </p>
         </div>
         </div>
         <p className="font-body text-sm">
-        I highly recommend utilizing this app for recruiting top talent. The platform offers a vast pool of highly qualified health professionals, making the hiring process efficient and effective. <span className="text-altru-blue"> The detailed profiles and real-time availability information helps you identify the best-fit candidates for your organization. </span>      </p>
+        Working with Altruistech Clean Water Innovation has been a rewarding experience. <span className="text-altru-blue"> The use of IoT and AI to ensure water safety is cutting-edge, and I'm proud to be a part of it. </span>      </p>
       
     </div>
-    <div className="card h-full bg-light-blue p-6 rounded-lg flex flex-col gap-4">
+    <div className="card h-full bg-altru-pink p-6 rounded-lg flex flex-col gap-4">
       <div className="card-img flex flex-row gap-4">
         <img src={Tony} alt="" className='w-24 h-24 rounded-full' />
         <div className="card-img-text self-center">
           <p className="font-display">
-            Tony Bryan
+          Omar Mansaray
           </p>
           <p className="font-body text-xs text-gray-700 ">
-            Community Health Worker
+           Local Health Worker
           </p>
         </div>
         </div>
         <p className="font-body text-sm">
-        Through the Altruistech app, I've <span className="text-altru-blue"> connected with other dedicated professionals, collaborated on community health initiatives, and expanded my knowledge base. </span> It's a supportive platform that empowers you to make a lasting difference in the lives of those you serve. Join the community and embark on a fulfilling journey in community health.        </p>
+<span className="text-altru-blue"> Access to clean water is a key to preventing waterborne diseases. </span> Altruistech Clean Water Innovation has significantly improved the health of our community.        </p>
       
     </div>
-    <div className="card bg-light-blue h-full p-6 rounded-lg flex flex-col gap-4">
+    <div className="card bg-altru-pink h-full p-6 rounded-lg flex flex-col gap-4">
       <div className="card-img flex flex-row gap-4">
         <img src={Nengi} alt="" className='w-24 h-24 rounded-full' />
         <div className="card-img-text self-center">
           <p className="font-display">
-            Nengi Phillips
+          Kadiatu Kamara
           </p>
           <p className="font-body text-xs ">
-            Trader
+            Community Leader
           </p>
         </div>
         </div>
         <p className="font-body text-sm">
-        Altruistech is a game-changer in terms of convenience and access to quality healthcare. <span className="text-altru-blue">The app connects you with skilled and compassionate health professionals who provide expert advice and care.</span>I've received prompt and thorough consultations from the comfort of my home.        </p>
+        The Altruistech Clean Water Innovation has transformed our community.<span className="text-altru-blue">
+        Clean water was a dream, and now it's a reality.</span> We're grateful for this life-changing solution.        </p>
       
     </div>
     
@@ -120,4 +121,4 @@ return (
 )
 }
 
-export default TestimonialsHealth;
+export default TestimonialsWater;

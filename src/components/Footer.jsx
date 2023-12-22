@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className=''>
         <footer className='bg-black text-white'>
-            <div className='footer-div px-6 py-20 sm:flex md:flex lg:justify-around lg:content-start lg:flex lg:flex-row md:flex-col sm:flex-col sm:justify-around md:justify-around sm:gap-5 md:gap-5'>
+            <div className='footer-div font-body px-6 py-20 sm:flex md:flex lg:justify-around lg:content-start lg:flex lg:flex-row md:flex-col sm:flex-col sm:justify-around md:justify-around sm:gap-5 md:gap-5'>
                 <div>
              
                 <span
@@ -58,7 +58,7 @@ function Footer() {
             
 </div>        
                 </div>
-                <div className='company-div flex flex-col sm:gap-0 md:gap-0 lg:gap-3'>
+                <div className='company-div font-body flex flex-col sm:gap-0 md:gap-0 lg:gap-3'>
                     <p className='font-logo text-altru-yellow pb-2' >
                         Company
                     </p>
@@ -73,7 +73,7 @@ About Us                    </Link>
 Our Team              </Link>
                 </div>
     
-                <div className='company-div flex flex-col sm:gap-0 md:gap-0 lg:gap-3'>
+                <div className='company-div font-body flex flex-col sm:gap-0 md:gap-0 lg:gap-3'>
                     <p className='font-logo text-altru-yellow'>
                         Projects
                     </p>
@@ -92,7 +92,7 @@ Altruistech Clean Water Innovation             </Link>
 
 Altruistech Environmental Compliance Guage             </Link>
                 </div>
-       <div className="company-div flex flex-col sm:gap-0 md:gap-0 lg:gap-3">
+       <div className="company-div font-body flex flex-col sm:gap-0 md:gap-0 lg:gap-3">
        <p className='font-logo text-altru-yellow'>
                        Featured
                     </p>
@@ -106,7 +106,7 @@ Contact Us        </Link>
                
             </div>
     
-<div className="bottoms py-20 px-6 lg:mx-10 sm:px-0 sm:mx-6 border-t flex lg:flex lg:flex-row lg:justify-center lg:gap-5">
+<div className="bottoms font-body py-20 px-6 lg:mx-10 sm:px-0 sm:mx-6 border-t flex lg:flex lg:flex-row lg:justify-center lg:gap-5">
 <Typography
             variant="small"
             className="mb-4 lg:text-center font-normal text-footer-text md:mb-0"

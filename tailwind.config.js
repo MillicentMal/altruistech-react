@@ -3,10 +3,7 @@ const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    screens: {
-      'sm': '24px',
-      // => @media (min-width: 640px) { ... }
-    },
+   
     container: {
       center: true,
       padding: {

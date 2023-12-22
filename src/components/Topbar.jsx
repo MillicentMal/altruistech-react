@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import {  ChevronDownIcon,   Bars3Icon,   XMarkIcon, } from "@heroicons/react/24/outline";
 import {
 
-  SunIcon,
+
 GlobeEuropeAfricaIcon,
   CogIcon,
   HeartIcon,

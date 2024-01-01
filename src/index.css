@@ -77,6 +77,10 @@ gap: 1em;
 .butt-center {
   width: 100%;
 }
+.hub-body {
+  margin-left: 3rem;
+  width: 80%;
+}
   .bottoms {
     display: flex;
       flex-direction: column;

@@ -18,7 +18,7 @@ import GridImg10 from '../assets/images/grid-10.jpeg'
 import GridImg11 from '../assets/images/grid-11.jpeg'
 import GridImg12 from '../assets/images/grid-12.jpeg'
 import TestimonialsHub from './TestimonialsHub'
-
+import { Link } from 'react-router-dom'
 
 
 function Hub() {
@@ -38,11 +38,13 @@ function Hub() {
         Altruistech & <span className="text-altru-blue">Creativity</span>  Hub
         </p>
         </div>
-        <p className="font-body self-center w-1/2">
+        <p className="font-body hub-body lg:self-center sm:text-left w-1/2">
         Through strategic partnerships, we aim to promote gender equality by enhancing the creative and innovation power of young people, mainly girls, and deploy them to solve global problems starting at a local level.        </p>
+       
         <button className="button hub-button bg-altru-blue hover:bg-blue-700 text-white py-2 self-center w-2/6 my-16 px-4 rounded">
-        Make Enquiry
+       <Link to="/contact-us"> Make Enquiry </Link>
     </button>
+  
       </div>
       </div >
       <div className="bg-altru-yellow hub-div gap-10 mx-auto w-4/5 p-12 lg:flex lg:flex-row my-20">

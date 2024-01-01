@@ -1,7 +1,6 @@
 import './App.css';
 import Home from './components/Home';
 import {Route, Routes} from 'react-router-dom';
-import Kadula from './components/Kadula';
 import Health from './components/Health';
 import Hub from './components/Hub';
 import Water from './components/Water';
@@ -11,9 +10,7 @@ import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Mission from './components/Mission';
-import TeamCard from './components/TeamCard';
-import TeamGrid from './components/TeamGrid';
-import ModalComponent from './components/Modal';
+
 // import Testimonial from './components/Testimonial';
 
 function App() {

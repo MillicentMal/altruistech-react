@@ -52,8 +52,7 @@ function Env() {
     <div className='lg:self-center'>
     
     <p className='font-body text-gray-700 sm:mt-6 sm:mx-0'>
-    This solution uses refurbished electronic waste and STEM materials to enhance youth creativity skills. It promotes STEM education, particularly among Sierra Leone youth, to solve local or community problems in Sierra Leone. This initiative engages young people, mainly girls and women aged 7 to 25, in S.T.E.M. education programs such as workshops, boot camps, and mentorship opportunities tailored around building innovative solutions. We also provide exposure by allowing them to showcase their learnings at a global level.
-    </p>
+    The Altruistech environment compliance gauge project enhances compliance with environmental safety policies among large industries, educational institutions, and S.M.E.s, improves the environmental impact assessment process, promotes a safety-conscious environment,  and enhances ecology conservation decision-making using AI & live data. We aim to revolutionize environmental compliance and advocate for a safer environment or more responsible use of resources by utilizing exponential technologies such as sensors, robotics, and data-driven analytics. This project seeks to promote public environmental accountability by emphasizing the importance of holding individuals and organizations responsible for their actions and decisions that affect the environment, particularly when these actions significantly impact the public or society.    </p>
     <div className='relative my-6'>
         <div className='rounded-full bg-altru-blue h-10 w-10'> 
     <div className='text-white absolute bottom-2 left-5'>

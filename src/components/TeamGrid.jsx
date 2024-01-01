@@ -24,8 +24,8 @@ const Team = [
     {
         "name": "Daniel Falama",
         "title": "Founder",
-        "description": "Daniel  is a creative technologist, an aspiring researcher, and a practicing data analyst with over a decade of experience in technology innovation. He has completed half a dozen projects, mostly climate tech and awareness related in his home country, and the success of these projects inspired a movement that supported the founding of the Altruistech Group of Innovations.",
-        "link": "https://www.linkedin.com/in/abdul-karim-sesay-2858b6203/", 
+        "description": " Daniel Falama is an - 18-year-old robotics and software engineering student in Sierra Leone. Daniel has over seven years of innovation experience and is highly recognized for his contributions to community development. In 2020, Daniel was among the top 5 under 15 young climate change champions in Sierra Leone. This landed him the opportunity to volunteer with the Sierra Leone Ministry of Environment. He has also represented Sierra Leone as the team captain in consecutive World Robotics competitions in Switzerland and Singapore. Find his profile here",
+        "link": "https://www.facebook.com/daniel.falama.92", 
         "image": Daniel
 
     }, 
@@ -34,15 +34,15 @@ const Team = [
     {
         "name": "Gabriel Oke",
         "title": "Co-Founder",
-        "description": "Gabriel  is a creative technologist, an aspiring researcher, and a practicing data analyst with over a decade of experience in technology innovation. He has completed half a dozen projects, mostly climate tech and awareness related in his home country, and the success of these projects inspired a movement that supported the founding of the Altruistech Group of Innovations.",
-        "link": "https://www.linkedin.com/in/abdul-karim-sesay-2858b6203/", 
+        "description": " I hold an MSc in Global Health specializing in healthcare management from the University of Global Health Equity, Rwanda, an initiative by Partners in Health. As the founder of Medlabconvo, my organization is dedicated to enhancing the personal and professional capacities of 500+ healthcare students and young professionals by the end of 2023. My AI certification from Nexford University, combined with a background as a Medical Laboratory Scientist at Nigerian Hospital Abuja, Nigeria, and over five years of experience in project management, journalism, health communications, and research, positions me as a leader at the intersection of healthcare, project management, and technology. My portfolio includes co-authored articles in prestigious publications emphasizing the potential of health technology in healthcare delivery for positive health outcomes. Proficient in project management, research writing, strategic communication, and data analysis, I advocate for data-driven healthcare optimization and patient empowerment.",
+        "link": "https://www.linkedin.com/in/gabrieloke/", 
         "image": Gabriel
 
     }, 
     {
         "name": "Axel Shimwe",
         "title": "Co-Founder",
-        "description": "Axel  is a creative technologist, an aspiring researcher, and a practicing data analyst with over a decade of experience in technology innovation. He has completed half a dozen projects, mostly climate tech and awareness related in his home country, and the success of these projects inspired a movement that supported the founding of the Altruistech Group of Innovations.",
+        "description": " Axel is a final year medical student from the University of Global Health Equity (UGHE), Rwanda. With an interest in innovation in healthcare, he completed the global innovation lab at Babson College KMH Center, working with Insightiv Rwanda. This AI-based startup improves access to radiology services. He participated in a hackathon at UGHE innovation lab with a  project to digitize the medical referral system in Rwanda.  He is a Savvy fellow, a program designed to build a new generation of impactful entrepreneurs. One day, I aspire to co-found a leading digital health tech company in Rwanda. ",
         "link": "https://www.linkedin.com/in/abdul-karim-sesay-2858b6203/", 
         "image": Axel
 
@@ -81,7 +81,7 @@ function TeamGrid() {
         <p>
         We believe that technology can be a powerful force for good, and we are using our skills and expertise to develop solutions that can make a real difference in the world.
         </p>
-        <Link>
+        <Link to={"/team"}>
         <div className='relative mt-6
          rounded-full bg-altru-yellow h-10 w-10'> 
 

@@ -5,12 +5,35 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import { faFacebookF, faTwitter, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons'
-import { useState } from 'react'
+import { useState } from 'react';
+import { db } from '../firebase.config';
+import { collection, addDoc } from "firebase/firestore";
 
 function Contact() {
-    const [phone, setPhone] = useState('');
-
+    const initialState = {
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+      };
+      
+    const [formState, setFormState] = useState({initialState});
+    async function handleSubmit(e) {
+        e.preventDefault();
+      
+        try {
+          const docRef = await addDoc(collection(db, "contactFormSubmissions"), formState);
+          console.log("Document written with ID: ", docRef.id);
+        setFormState(initialState);
+        } catch (e) {
+          console.error("Error adding document: ", e);
+        }
+      }
+      
+ 
   return (
+    
 <div>
     <div className='contact-div bg-light-blue'>
         <Topbar className="mb-0" background='light-blue'/>
@@ -68,31 +91,37 @@ function Contact() {
             </div>
             </div>
 <div className="contact-form">
-<form action="" className='flex flex-col gap-6'>
+<form action="" className='flex flex-col gap-6' onSubmit={handleSubmit}>
     <div className="names lg:flex lg:flex-row sm:flex lg:gap-14 sm:flex-col  sm:gap-4">
         <fieldset className='flex flex-col sm:mb-4'>
             <label htmlFor="first_name" className=''>First Name <span className="text-red-800 font-bold">*</span> </label>
-            <input className='rounded-lg px-4 py-2' type="text" name="name" id="first_name" placeholder='Enter your First Name' />
+            <input value={formState.firstName}
+      onChange={e => setFormState({ ...formState, firstName: e.target.value })} className='rounded-lg px-4 py-2' type="text" name="name" id="first_name" placeholder='Enter your First Name' />
         </fieldset>
         <fieldset className='flex flex-col'>
             <label htmlFor="last_name" className=''>Last Name <span className="text-red-800 font-bold">*</span> </label>
-            <input className='rounded-lg px-4 py-2' type="text" name="name" id="last_name" placeholder='Enter your Last Name' />
+            <input value={formState.lastName}
+      onChange={e => setFormState({ ...formState, lastName: e.target.value })} className='rounded-lg px-4 py-2 font-body' type="text" name="name" id="last_name" placeholder='Enter your Last Name' />
         </fieldset>
     </div>
     <fieldset className='flex flex-col'>
             <label htmlFor="email" className=''>Email<span className="text-red-800 font-bold">*</span> </label>
-            <input className='rounded-lg px-4 py-2 w-full' type="text" name="email" id="email" placeholder='Enter your Email' />
+            <input value={formState.email}
+      onChange={e => setFormState({ ...formState, email: e.target.value })} className='rounded-lg px-4 py-2 w-full' type="text" name="email" id="email" placeholder='Enter your Email' />
         </fieldset>
         <fieldset className='flex flex-col'>
             <label htmlFor="phone" className=''>Phone<span className="text-red-800 font-bold">*</span> </label>
-            <input className='rounded-lg px-4 py-2 w-full' type="text" name="phone" id="phone" placeholder='Enter your Phone Number' />
+            <input value={formState.phone}
+      onChange={e => setFormState({ ...formState, phone: e.target.value })} className='rounded-lg px-4 py-2 w-full' type="text" name="phone" id="phone" placeholder='Enter your Phone Number' />
             </fieldset>
             <fieldset>
                 <label htmlFor="message" className=''>Message <span className="text-red-800 font-bold">*</span> </label>
-                <textarea className='rounded-lg px-4 py-2 w-full' name="message" id="message" cols="30" rows="10" placeholder='Enter your Message'></textarea>
+                <textarea value={formState.message}
+      onChange={e => setFormState({ ...formState, message: e.target.value })} className='rounded-lg px-4 py-2 w-full' name="message" id="message" cols="30" rows="10" placeholder='Enter your Message'></textarea>
             </fieldset>
 
-            <button className="button bg-altru-blue w-full hover:bg-blue-700 text-white py-2 px-4 rounded">
+            <button type="submit"
+            className="button bg-altru-blue w-full hover:bg-blue-700 text-white py-2 px-4 rounded">
         Send Message
     </button>
 </form>

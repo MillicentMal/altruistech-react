@@ -13,13 +13,13 @@ import Community from '../assets/images/chw-pic.png'
 import Finger from '../assets/images/Vector.png'
 import CurlyArrow from '../assets/images/57.svg'
 import { Icon } from '@iconify/react';
-import Waitlist from './Waitlist'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserDoctor,
   faList, faArrowDownWideShort, faCircleRadiation, faCompass, faHospital, faPaperPlane, faCommentDots, faPeopleArrows, faRadiation, faStarHalfStroke, faDownload, faBell, faCircleArrowUp } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom'
 import TestimonialsHealth from './Testimonials-Health'
 import HealthAccordion from './HealthAccordion'
+import WaitlistModal from './WaitlistModal'
 
 function Health() {
   return (
@@ -40,7 +40,7 @@ function Health() {
         Join Altruistech today and unlock a world of collaboration, convenience, and improved healthcare outcomes. We bridge the gap between health professionals seeking rewarding opportunities, hospitals aiming to recruit top talent, patients in need of online medical consultations, and community health workers eager to make a positive impact.
         </p>
       
-       <Waitlist />
+       <WaitlistModal size="2/3" position="center"/>
         
        </div>
        </div>
@@ -118,7 +118,7 @@ function Health() {
            
           Get access to company profiles and information, including details about the company's mission, culture and other benefits.          </p>
           </div>
-        <Waitlist/>
+        <WaitlistModal size="1/2"/>
         </div>
       
       </div>
@@ -183,7 +183,7 @@ function Health() {
           Create a company profile to showcase the organization and its values.         
            </p>
           </div>
-         <Waitlist/>
+         <WaitlistModal size="1/2" />
         </div>
         <img src={Recruit} alt="" className='rounded-lg lg:w-1/2' />
 
@@ -257,7 +257,7 @@ function Health() {
            
           Engage in secure messaging with health professionals.                           </p>
           </div>
-          <Waitlist/>
+          <WaitlistModal size="1/2" />
         </div>
       
       </div>
@@ -312,7 +312,7 @@ function Health() {
            
           Communicate securely with health professionals and patients who needs your service.                   </p>
           </div>
-         <Waitlist/>
+         <WaitlistModal size="1/2"/>
         </div>
         <img src={Community} alt="" className='rounded-lg sm:order-1 lg:w-1/2' />
 

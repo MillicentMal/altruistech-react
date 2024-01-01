@@ -1,20 +1,16 @@
 import React from 'react'
-import { Typography } from "@material-tailwind/react";
-import Abdul from '../assets/images/abdul.png'
-import { Fragment, useState } from 'react'
+import { Fragment } from 'react'
 
-import { Link } from 'react-router-dom'
-import { faArrowRight, } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 import {
   Popover,
   PopoverHandler,
   PopoverContent,
-  Button,
 } from "@material-tailwind/react";
-
+import YelloButton
+ from './YelloButton'
 function TeamCard ({ image, founderName, founderDescription, link, title }) {
-  
+
 
   return (
   <div>
@@ -45,17 +41,7 @@ function TeamCard ({ image, founderName, founderDescription, link, title }) {
                   {founderDescription}
 
                   </p>
-                  <div className='relative
-         rounded-full bg-altru-yellow h-10 w-10'> 
-
-        </div>
-        <div className='linkedin'>
-          <Link to={link}>
-Link to Linkedin Profile          <span>
-            <FontAwesomeIcon icon={faArrowRight} className='text-center ps-2' />
-          </span>
-          </Link>
-        </div>
+           <YelloButton link={link} />
               </div>
             </div>
        

@@ -3,12 +3,12 @@ import Topbar from './Topbar'
 import Star from '../assets/images/about-star.svg'
 import Top from '../assets/images/about-us.png'
 import Abdul from '../assets/images/about-abdul.png'
-import Mission from './Mission'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import SdgIcon from '../assets/images/sdg-icon.svg'
 import Partners from './Partners'
 import Sixteen from '../assets/images/16.svg'
+import Donate from './Donate'
 
 function About() {
   return (
@@ -51,9 +51,7 @@ this a <span className='text-altru-blue'>while ago
              <p className='font-body'>
              A world where everyone has access to necessities, enjoys equal opportunities, and lives in harmony with the planet. We envision a future where the 17 SDGs are not just ambitious goals but a global reality and where our projects inspire and empower others to take action for a better world.
              </p>
-             <button className="button bg-altru-blue hover:bg-blue-700 w-1/2 text-white py-2 px-4 rounded">
-        Donate Now
-    </button>
+          <Donate />
                 </div>
             </div>
         </div>

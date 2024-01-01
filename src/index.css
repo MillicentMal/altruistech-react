@@ -74,7 +74,9 @@ gap: 1em;
 }
 
 @media (max-width: 765px) {
-
+.butt-center {
+  width: 100%;
+}
   .bottoms {
     display: flex;
       flex-direction: column;
@@ -166,14 +168,14 @@ gap: 1em;
 }
 .button-star {
   width: 100%;
+  align-self: flex-start;
 }
   .star-header-home {
     height: 250px;
     width: 80%;
     text-align: center;
-
-
   }
+ 
   .custom-button-group {
     position: absolute;
     bottom: 0%;
@@ -563,3 +565,10 @@ word-wrap: break-word
   border-color: #F8FFCF;
   border-style: solid;
 }
+
+.submit-button {
+  width: 100%;
+  padding: 4px;
+
+}
+

@@ -2,7 +2,6 @@ import React from "react";
 import {Navbar,   Collapse,   Typography,   
     IconButton,   List,   ListItem,   Menu,
   MenuHandler,   MenuList,   MenuItem, } from "@material-tailwind/react";
-import CustomButton from './Button'
 import { Link } from "react-router-dom";
 
 
@@ -20,6 +19,7 @@ CloudIcon,
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircle} from '@fortawesome/free-solid-svg-icons'
 import '../index.css'
+import Donate from "./Donate";
 
 
 
@@ -197,7 +197,7 @@ export function Topbar({background}) {
   }, []);
  
   return (
-    <Navbar className={`mx-auto rounded-none  shadow-none border-0 border-inherit  py-2 bg-${background}`}>
+    <Navbar className={`mx-auto rounded-none shadow-none border-0 border-inherit  py-2 bg-${background}`}>
       <div className="flex items-center justify-between text-blue-gray-900">
         <span
           as="a"
@@ -211,7 +211,7 @@ export function Topbar({background}) {
         </div>
         <div className="hidden gap-2 lg:flex">
    
-          <CustomButton/>
+          <Donate className="w-max"/>
         </div>
         <IconButton
           variant="text"
@@ -230,7 +230,7 @@ export function Topbar({background}) {
         <NavList />
         <div className="flex w-full flex-nowrap items-center gap-2 lg:hidden">
          
-          <CustomButton variant="gradient" size="sm" fullWidth className="font-logo"/>
+          <Donate variant="gradient" size="sm" fullWidth className="font-logo lg:w-max"/>
            
         </div>
       </Collapse>

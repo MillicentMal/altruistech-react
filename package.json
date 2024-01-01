@@ -17,6 +17,9 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "crypto-browserify": "^3.12.0",
+    "dotenv": "^16.3.1",
+    "firebase": "^10.7.1",
     "framer-motion": "^10.16.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -55,5 +58,10 @@
     "@iconify/icons-mdi": "^1.2.48",
     "@iconify/react": "^4.1.1",
     "tailwindcss": "^3.3.5"
+  },
+  "resolve": {
+    "fallback": {
+      "crypto": "require.resolve(crypto-browserify)"
+    }
   }
 }

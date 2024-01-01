@@ -99,8 +99,7 @@ of <span className='text-altru-yellow'>
                 </span>  Impact
                 </p>
                 <p className="font-body">
-                We are results-driven. We carefully plan and execute each project with clear objectives and measurable outcomes. We continuously monitor and evaluate our impact to ensure our efforts make a real difference in our communities.
-                </p>
+                We are results-driven. We carefully plan and execute each project with clear objectives and measurable outcomes. We continuously monitor and evaluate our impact to ensure our efforts make a real difference in our communities.                </p>
             </div>
             <div>
                 <img src={SdgIcon} alt="" className='pb-6 h-20 w-20'/>
@@ -109,8 +108,8 @@ of <span className='text-altru-yellow'>
                 </span>  Initiatives
                 </p>
                 <p className="font-body">
-                We focus on the 17 SDGs outlined by the United Nations. Each of our projects is designed to contribute to one or more of these goals directly.                </p>
-            </div>
+                We focus on the 17 SDGs outlined by the United Nations. Each of our projects is designed to contribute to one or more of these goals directly.</p>
+                            </div>
             <div>
                 <img src={SdgIcon} alt="" className='pb-6 h-20 w-20'/>
                 <p className="font-logo pb-4">
@@ -118,7 +117,7 @@ of <span className='text-altru-yellow'>
                 </span>  Projects
                 </p>
                 <p className="font-body">
-                Our goal is to make a difference today and create lasting change. We design our projects sustainably, ensuring the positive impacts continue long after implementation.
+                We aim to make a difference today and create lasting change. We design our projects sustainably, ensuring the positive impacts continue long after implementation.
                 </p>            </div>
                 <div>
                 <img src={SdgIcon} alt="" className='pb-6 h-20 w-20'/>
@@ -136,17 +135,16 @@ of <span className='text-altru-yellow'>
                 </span>  and Partnerships
                 </p>
                 <p className="font-body">
-                We believe in the power of innovation to transform societies and protect our planet. Our dedicated experts and innovators collaborate to develop cutting-edge solutions that address complex global issues. From technology-driven solutions to community-based interventions, we explore various approaches to achieve our goals.
+                Achieving the SDGs requires a collective effort. We seek partnerships with like-minded organizations, governments, businesses, and individuals who share our commitment to sustainability and social progress. These collaborations enable us to leverage resources and expertise for maximum impact.
                 </p>            </div>
                 <div className='lg:me-6'>
                 <img src={SdgIcon} alt="" className='pb-6 h-20 w-20'/>
                 <p className="font-logo pb-4 text-altru-yellow tracking-wide">
                <span className='text-altru-mango'>Transparency
-                </span>  <span className='text-white'>and</span>  Partnerships
+                </span>  <span className='text-white'>and</span>  Accountability
                 </p>
                 <p className="font-body">
-                We believe in the power of innovation to transform societies and protect our planet. Our dedicated experts and innovators collaborate to develop cutting-edge solutions that address complex global issues. From technology-driven solutions to community-based interventions, we explore various approaches to achieve our goals.
-                </p>            </div>
+                We are committed to transparency in all our operations. We communicate openly with our stakeholders, donors, and supporters, providing regular updates on our projects and financial accountability. Our commitment to transparency ensures that you can trust your support is making a meaningful impact                </p>            </div>
         </div>
 
 <Partners/>
